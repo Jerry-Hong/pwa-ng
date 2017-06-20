@@ -1,0 +1,6 @@
+<div>
+  <h1>{{ ((this.article | async) || {}).title }}</h1>
+  <p>
+    {{ ((this.article | async) || {}).body }}
+  </p>
+</div>

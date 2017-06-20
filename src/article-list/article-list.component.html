@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let article of articleList | async">
+    <a [routerLink]="['/post/' + article.id]">
+      {{ article.title }}
+    </a>
+  </li>
+</ul>
