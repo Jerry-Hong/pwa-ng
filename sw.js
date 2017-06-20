@@ -28,11 +28,11 @@ const fileManifest = [
   },
   {
     "url": "/index.html",
-    "revision": "e066efa25db0c44443ac5a5c924d1323"
+    "revision": "862b32023d79bf05ee0a2f1197b2c5dd"
   },
   {
     "url": "/inline.bundle.js",
-    "revision": "55ebee74c93c8373ff0ac54d9dd60f0a"
+    "revision": "0d1f0b8087ef09663727952ba6da7e3a"
   },
   {
     "url": "/main.bundle.js",
