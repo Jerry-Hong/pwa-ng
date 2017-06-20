@@ -36,7 +36,7 @@ const fileManifest = [
   },
   {
     "url": "/main.bundle.js",
-    "revision": "951bb5100cab0e0e58754668f8e52cb2"
+    "revision": "349558af1c7e87f3598327c96300e8dc"
   },
   {
     "url": "/polyfills.bundle.js",
