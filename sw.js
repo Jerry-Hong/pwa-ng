@@ -28,7 +28,7 @@ const fileManifest = [
   },
   {
     "url": "/index.html",
-    "revision": "862b32023d79bf05ee0a2f1197b2c5dd"
+    "revision": "1afe513b4e869cff0d8a9dc4189bd096"
   },
   {
     "url": "/inline.bundle.js",
