@@ -117,7 +117,7 @@ AppModule = __decorate([
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* RouterModule */].forRoot(appRoutes),
+            __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* RouterModule */].forRoot(appRoutes, { useHash: true }),
             __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* HttpModule */],
         ],
         providers: [],
@@ -217,7 +217,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var ArticleService = (function () {
     function ArticleService(http) {
         this.http = http;
-        this.base = 'http://jsonplaceholder.typicode.com';
+        this.base = 'https://jsonplaceholder.typicode.com';
     }
     ArticleService.prototype.getArticleList = function () {
         return this.http.get(this.base + "/posts")
