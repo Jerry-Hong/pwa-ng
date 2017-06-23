@@ -1,0 +1,28 @@
+@keyframes loading {
+  0% {
+    background-position: 0 0;
+  }
+  50%  {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.article-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.blank {
+  height: 15px;
+  line-height: 15px;
+  margin: 0 0 10px 0;
+  background-image: linear-gradient(to left, #f0f0f0, #d2d2d2);
+  background-size: 200% auto;
+  background-position: 100% 0;
+  border-radius: 3px;
+  animation: loading 1.5s linear 0s infinite;
+}

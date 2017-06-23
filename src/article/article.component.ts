@@ -11,20 +11,17 @@ import {ArticleService} from '../article-service/article.service';
   providers: [ArticleService],
 })
 export class ArticleComponent implements OnInit {
-  private id: number;
   private article: any;
   constructor(
     private articleService: ArticleService,
     private route: ActivatedRoute,
-    private router: Router
   ) { }
 
   ngOnInit() {
     this.article = this.route.params
-      .do((params: Params) => this.id = +params['id'])
       .switchMap((params: Params) => {
         return this.articleService.getArticleById(params['id'])
-      }).share();
+      })
   }
 
 }

@@ -1,7 +1,41 @@
-<ul>
-  <li *ngFor="let article of articleList | async">
+<ul class="article-list" *ngIf="articleList | async as aList else loading">
+  <li *ngFor="let article of aList">
     <a [routerLink]="['/post/' + article.id]">
       {{ article.title }}
     </a>
   </li>
 </ul>
+<ng-template #loading>
+  <ul class="article-list">
+    <li class="blank"></li>
+    <li class="blank"></li>
+    <li class="blank"></li>
+    <li class="blank"></li>
+    <li class="blank"></li>
+    <li class="blank"></li>
+    <li class="blank"></li>
+    <li class="blank"></li>
+    <li class="blank"></li>
+    <li class="blank"></li>
+    <li class="blank"></li>
+    <li class="blank"></li>
+    <li class="blank"></li>
+    <li class="blank"></li>
+    <li class="blank"></li>
+    <li class="blank"></li>
+    <li class="blank"></li>
+    <li class="blank"></li>
+    <li class="blank"></li>
+    <li class="blank"></li>
+    <li class="blank"></li>
+    <li class="blank"></li>
+    <li class="blank"></li>
+    <li class="blank"></li>
+    <li class="blank"></li>
+    <li class="blank"></li>
+    <li class="blank"></li>
+    <li class="blank"></li>
+    <li class="blank"></li>
+    <li class="blank"></li>
+  </ul>
+</ng-template>

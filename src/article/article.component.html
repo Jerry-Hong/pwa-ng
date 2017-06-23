@@ -1,6 +1,12 @@
-<div>
-  <h1>{{ ((this.article | async) || {}).title }}</h1>
+<div class="content" *ngIf="article | async as a else loading">
+  <h1>{{ a.title }}</h1>
   <p>
-    {{ ((this.article | async) || {}).body }}
+    {{ a.body }}
   </p>
 </div>
+<ng-template #loading>
+  <div class="content">
+    <h1 class="title"></h1>
+    <div class="body"></div>
+  </div>
+</ng-template>
